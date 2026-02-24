@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "WebFetch(domain:lusion.co)",
+      "Bash(npm uninstall:*)",
+      "Bash(del \"C:\\\\Users\\\\Federico gonzalez\\\\Desktop\\\\toolfut-fe\\\\src\\\\shared\\\\composables\\\\useScrollLine.ts\")",
+      "Bash(del \"C:\\\\Users\\\\Federico gonzalez\\\\Desktop\\\\toolfut-fe\\\\src\\\\shared\\\\components\\\\ScrollLineCanvas.vue\")"
+    ]
+  }
+}

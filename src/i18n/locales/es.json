@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "products": "Productos",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "quote": "Cotizar"
+  },
+  "features": {
+    "tag": "Por qué elegirnos",
+    "title": "Ferretería Electrónica de Confianza",
+    "tools": {
+      "title": "Herramientas Pro",
+      "description": "Las mejores marcas del mercado con garantía extendida."
+    },
+    "shipping": {
+      "title": "Envío Rápido",
+      "description": "Entrega en 24-48hs a todo el país."
+    },
+    "financing": {
+      "title": "Financiación",
+      "description": "Hasta 12 cuotas sin interés con todas las tarjetas."
+    },
+    "service": {
+      "title": "Servicio Técnico",
+      "description": "Reparación y mantenimiento de equipos."
+    }
+  },
+  "footer": {
+    "tagline": "Tu ferretería electrónica de confianza",
+    "copyright": "© 2024 VOLTIX. Todos los derechos reservados.",
+    "products": {
+      "title": "Productos",
+      "drills": "Taladros",
+      "grinders": "Amoladoras",
+      "welders": "Soldadoras",
+      "compressors": "Compresores"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Nosotros",
+      "locations": "Sucursales",
+      "careers": "Trabaja con nosotros"
+    },
+    "contact": {
+      "title": "Contacto",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "social": "Redes"
+    }
+  },
+  "loading": {
+    "text": "Cargando experiencia..."
+  },
+  "hero": {
+    "title1": "POTENCIA",
+    "title2": "PROFESIONAL",
+    "subtitle": "Scrollea para descubrir la ingeniería"
+  },
+  "feature1": {
+    "tag": "MOTOR BRUSHLESS",
+    "title": "Sin Escobillas. Máxima Eficiencia.",
+    "description": "Tecnología de última generación que elimina el desgaste y aumenta la vida útil del motor hasta 3 veces."
+  },
+  "feature2": {
+    "tag": "BATERÍA 20V LITHIUM",
+    "title": "Potencia. Todo el Día.",
+    "description": "Sistema de carga rápida con autonomía extendida para los trabajos más exigentes."
+  },
+  "cta": {
+    "tag": "DISPONIBLE AHORA",
+    "title": "Tu Próxima Herramienta Pro",
+    "button": "Ver Catálogo Completo"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "shop": "Tienda",
+    "cart": "Carrito"
+  }
+}

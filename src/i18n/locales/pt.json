@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "products": "Produtos",
+    "services": "Serviços",
+    "contact": "Contato",
+    "quote": "Orçamento"
+  },
+  "features": {
+    "tag": "Por que nos escolher",
+    "title": "Loja de Ferramentas Eletrônicas de Confiança",
+    "tools": {
+      "title": "Ferramentas Pro",
+      "description": "As melhores marcas do mercado com garantia estendida."
+    },
+    "shipping": {
+      "title": "Envio Rápido",
+      "description": "Entrega em 24-48h para todo o país."
+    },
+    "financing": {
+      "title": "Financiamento",
+      "description": "Até 12 parcelas sem juros com todos os cartões."
+    },
+    "service": {
+      "title": "Serviço Técnico",
+      "description": "Reparo e manutenção de equipamentos."
+    }
+  },
+  "footer": {
+    "tagline": "Sua loja de ferramentas eletrônicas de confiança",
+    "copyright": "© 2024 VOLTIX. Todos os direitos reservados.",
+    "products": {
+      "title": "Produtos",
+      "drills": "Furadeiras",
+      "grinders": "Esmerilhadeiras",
+      "welders": "Soldadoras",
+      "compressors": "Compressores"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre Nós",
+      "locations": "Filiais",
+      "careers": "Trabalhe Conosco"
+    },
+    "contact": {
+      "title": "Contato",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "social": "Redes Sociais"
+    }
+  },
+  "loading": {
+    "text": "Carregando experiência..."
+  },
+  "hero": {
+    "title1": "POTÊNCIA",
+    "title2": "PROFISSIONAL",
+    "subtitle": "Role para descobrir a engenharia"
+  },
+  "feature1": {
+    "tag": "MOTOR BRUSHLESS",
+    "title": "Sem Escovas. Máxima Eficiência.",
+    "description": "Tecnologia de última geração que elimina o desgaste e aumenta a vida útil do motor em até 3 vezes."
+  },
+  "feature2": {
+    "tag": "BATERIA 20V LITHIUM",
+    "title": "Potência. O Dia Todo.",
+    "description": "Sistema de carga rápida com autonomia estendida para os trabalhos mais exigentes."
+  },
+  "cta": {
+    "tag": "DISPONÍVEL AGORA",
+    "title": "Sua Próxima Ferramenta Pro",
+    "button": "Ver Catálogo Completo"
+  }
+}

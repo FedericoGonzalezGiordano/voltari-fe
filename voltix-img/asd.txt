@@ -1,0 +1,329 @@
+Start Frame Prompt:
+
+Ultra-premium product photography of [PRODUCT TYPE / PRODUCT NAME] called “[PRODUCT NAME]”
+placed on a [SURFACE TYPE / COLOR] surface, minimalistic studio photoshoot.
+
+[BACKGROUND COLOR / STYLE] background with subtle gradient falloff,
+soft rim lighting outlining the [KEY PRODUCT FEATURES – edges / curves / form],
+controlled reflections on [MATERIALS – metal / glass / leather / plastic] textures.
+
+Cinematic lighting, high contrast, luxury [INDUSTRY / BRAND STYLE] aesthetic,
+sharp focus, shallow depth of field.
+
+No clutter, no text, no logos emphasized.
+
+Shot with a professional [CAMERA TYPE],
+[FOCAL LENGTH] lens, f/[APERTURE],
+ultra-high resolution, photorealistic,
+[REFERENCE STYLE – e.g. Apple-level] product shoot,
+dramatic mood, modern and elegant.
+
+
+
+End Frame Prompt: 
+
+Exploded technical diagram view of [PRODUCT TYPE / PRODUCT NAME],
+every component precisely separated and floating in perfect alignment,
+suspended in mid-air against a [BACKGROUND COLOR / STYLE] studio background.
+
+Visible internal structure including [KEY INTERNAL COMPONENTS – wiring / chips / motors / layers / frame / fasteners],
+clearly showing how the product is assembled.
+
+Hyper-realistic product visualization, ultra-sharp focus,
+studio rim lighting identical to the [REFERENCE SHOT – hero / product / marketing] image,
+soft highlights tracing each component,
+controlled reflections on [SURFACE TYPES – matte / metal / glass / plastic] surfaces.
+
+Cinematic lighting, high contrast,
+luxury [INDUSTRY / ENGINEERING STYLE] aesthetic.
+
+No labels, no annotations, no text.
+
+Photorealistic, ultra-high resolution,
+[REFERENCE BRAND / STYLE – e.g. Apple-style] industrial design render,
+dramatic and clean.
+
+
+
+Motion prompt: Smoothly transition from the assembled product to the exploded view, slow motion
+
+
+
+AI Code Editor Prompt
+
+ACT AS:
+A world-class Creative Developer (Awwwards-level) specializing in vue.js,
+Framer Motion, and high-performance scrollytelling experiences.
+
+THE TASK:
+Build a high-end scrollytelling landing page for a fictional product brand
+called “[BRAND NAME]”.
+
+The core mechanic is a scroll-linked animation that plays an image sequence
+of “[PRODUCT TYPE]” visually exploding (disassembling) and reassembling
+as the user scrolls down the page.
+
+TECH STACK:
+- Framework: Next.js 14 (App Router)
+- Styling: Tailwind CSS
+- Animation: Framer Motion
+- Rendering: HTML5 Canvas (for performance)
+
+VISUAL DIRECTION & COLOR:
+- Seamless Blending:
+  The website background MUST perfectly match the background color of the
+  image sequence so the edges of the frames are completely invisible.
+- Color Palette:
+  Pure dark mode. Use [BACKGROUND HEX COLOR — e.g. #050505] or
+  eye-drop the image background directly.
+- Typography:
+  [FONT FAMILY — e.g. Inter / San Francisco / Geist].
+  Clean, minimalist, tracking-tight.
+- Text Colors:
+  Headings: text-white/90
+  Body: text-white/60
+
+IMPLEMENTATION DETAILS:
+
+1. The Sticky Canvas
+- Create a component called `[SCROLL COMPONENT NAME].tsx`.
+- The outer container should be h-[400vh] to allow extended scroll time.
+- Inside it, render a <canvas> element that is:
+  - position: sticky
+  - top-0
+  - h-screen
+  - w-full
+- The canvas must be perfectly centered and fill the viewport.
+
+2. Scroll Logic
+- Load a sequence of [TOTAL FRAME COUNT] images generated from an image splitter.
+- Naming convention:
+  `[FRAME_PREFIX]_[i]_[OPTIONAL SUFFIX].webp`
+- Use useScroll from Framer Motion to map scroll progress (0 → 1)
+  to the frame index (0 → TOTAL FRAMES - 1).
+- On every scroll update:
+  - Calculate the current frame index
+  - Draw the corresponding image to the canvas
+- Ensure smooth interpolation and no visible stutter.
+
+3. Text Overlays (The Story)
+Overlay animated text sections that fade in and out as the product
+disassembles and reassembles.
+
+SCROLL SECTIONS (Editable):
+
+- 0% Scroll:
+  "[HERO HEADLINE]"
+  (Centered)
+
+- 30% Scroll:
+  "[FEATURE / MESSAGE #1]"
+  (Left aligned)
+  → Product begins expanding / separating
+
+- 60% Scroll:
+  "[FEATURE / MESSAGE #2]"
+  (Right aligned)
+  → Product fully exploded, internal components visible
+
+- 90% Scroll:
+  "[CTA / FINAL MESSAGE]"
+  (Centered)
+  → Product smoothly reassembles
+
+Text animations should be subtle, cinematic, and scroll-synced.
+
+4. Polish & UX
+- Add a loading state with a spinner while all images preload.
+- Do NOT start scroll animation until images are fully loaded.
+- Ensure the canvas scales correctly on mobile (contain fit).
+- Maintain consistent aspect ratio across devices.
+
+OUTPUT:
+Generate the complete, production-ready code for:
+- page.tsx
+- [SCROLL COMPONENT NAME].tsx
+- globals.css
+
+Use nano banana to generate UI components if needed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ACT AS:
+A senior Creative Developer (Awwwards-level) specialized in
+Next.js, Framer Motion, and premium scroll-driven product experiences.
+
+You are building a high-end scrollytelling landing page for an
+elegant electronic hardware store / ferretería tecnológica brand called
+“[NOMBRE DE TU FERRETERÍA]”.
+
+The goal is to present a professional, modern, and trustworthy brand
+with a strong focus on quality tools and engineering excellence.
+
+---
+
+THE EXPERIENCE:
+A scroll-linked cinematic product experience where a professional
+cordless drill smoothly disassembles and reassembles as the user scrolls.
+
+The animation communicates precision, durability, and mechanical quality,
+similar to Apple or Dyson-style product storytelling,
+but applied to professional tools.
+
+---
+
+CORE MECHANIC:
+- A frame-by-frame image sequence rendered on an HTML5 canvas
+- The drill transitions from fully assembled → exploded mechanical view → fully assembled
+- The animation progress is directly tied to scroll position
+
+---
+
+TECH STACK:
+- Framework: Next.js 14 (App Router)
+- Styling: Tailwind CSS
+- Animation: Framer Motion
+- Rendering: HTML5 Canvas (for high performance and smooth playback)
+
+---
+
+VISUAL DIRECTION:
+- Dark, elegant, industrial aesthetic
+- Premium and minimal, never flashy
+- Inspired by high-end engineering product websites
+
+COLOR & UI:
+- Background: Pure dark mode
+  Use a background color that exactly matches the image sequence
+  (e.g. #050505 or eye-dropped from frames)
+- The canvas must blend perfectly into the page (no visible edges)
+
+TYPOGRAPHY:
+- Font: Inter / Geist / San Francisco
+- Clean, modern, slightly condensed
+- Headings: text-white/90
+- Body text: text-white/60
+
+---
+
+IMPLEMENTATION DETAILS:
+
+### 1. Sticky Canvas Section
+- Create a component called `DrillScrollExperience.tsx`
+- Outer container height: `h-[400vh]` to allow slow, cinematic scrolling
+- Inside it, render a `<canvas>` element that is:
+  - `position: sticky`
+  - `top: 0`
+  - `h-screen`
+  - `w-full`
+- The canvas must always stay centered and fill the viewport
+
+---
+
+### 2. Image Sequence Logic
+- Load a sequence of `[TOTAL_FRAME_COUNT]` images
+- Naming convention:
+  `drill_frame_[index].webp`
+- Preload all images before allowing scroll interaction
+- Use `useScroll` from Framer Motion:
+  - Map scroll progress (0 → 1)
+  - To frame index (0 → TOTAL_FRAMES - 1)
+- On each scroll update:
+  - Calculate the current frame
+  - Draw it to the canvas
+- No stuttering, no frame skipping
+
+---
+
+### 3. Scroll Storytelling (Text Overlays)
+Overlay subtle, animated text sections that explain the product and brand
+as the drill disassembles.
+
+TEXT SECTIONS:
+
+- 0% scroll:
+  "Herramientas profesionales. Ingeniería real."
+  (Centered)
+
+- 30% scroll:
+  "Precisión mecánica en cada componente"
+  (Left aligned)
+  → Drill begins to disassemble
+
+- 60% scroll:
+  "Diseñado para durar. Construido para trabajar."
+  (Right aligned)
+  → Drill fully exploded, internal parts visible
+
+- 90% scroll:
+  "Potencia y confianza para tu próximo proyecto"
+  (Centered)
+  → Drill reassembles smoothly
+
+Text animations:
+- Fade + slight translate
+- Always subtle
+- Fully synchronized with scroll
+
+---
+
+### 4. UX & POLISH
+- Show a loading spinner until all frames are fully loaded
+- Disable scroll-driven animation until loading is complete
+- Canvas must scale correctly on mobile (contain fit)
+- Maintain correct aspect ratio on all devices
+- No layout shifts
+
+---
+
+OUTPUT REQUIRED:
+Generate clean, production-ready code for:
+
+- `app/page.tsx`
+- `components/DrillScrollExperience.tsx`
+- `app/globals.css`
+
+Code must be readable, performant, and suitable for a real commercial website.
+Avoid overengineering. Focus on smoothness and visual quality.
+

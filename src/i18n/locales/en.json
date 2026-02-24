@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "products": "Products",
+    "services": "Services",
+    "contact": "Contact",
+    "quote": "Get Quote"
+  },
+  "features": {
+    "tag": "Why choose us",
+    "title": "Trusted Electronic Hardware Store",
+    "tools": {
+      "title": "Pro Tools",
+      "description": "The best brands on the market with extended warranty."
+    },
+    "shipping": {
+      "title": "Fast Shipping",
+      "description": "Delivery in 24-48 hours nationwide."
+    },
+    "financing": {
+      "title": "Financing",
+      "description": "Up to 12 interest-free installments with all cards."
+    },
+    "service": {
+      "title": "Technical Service",
+      "description": "Equipment repair and maintenance."
+    }
+  },
+  "footer": {
+    "tagline": "Your trusted electronic hardware store",
+    "copyright": "© 2024 VOLTIX. All rights reserved.",
+    "products": {
+      "title": "Products",
+      "drills": "Drills",
+      "grinders": "Grinders",
+      "welders": "Welders",
+      "compressors": "Compressors"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "locations": "Locations",
+      "careers": "Careers"
+    },
+    "contact": {
+      "title": "Contact",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "social": "Social Media"
+    }
+  },
+  "loading": {
+    "text": "Loading experience..."
+  },
+  "hero": {
+    "title1": "PROFESSIONAL",
+    "title2": "POWER",
+    "subtitle": "Scroll to discover the engineering"
+  },
+  "feature1": {
+    "tag": "BRUSHLESS MOTOR",
+    "title": "Brushless. Maximum Efficiency.",
+    "description": "Latest generation technology that eliminates wear and increases motor lifespan up to 3 times."
+  },
+  "feature2": {
+    "tag": "20V LITHIUM BATTERY",
+    "title": "Power. All Day Long.",
+    "description": "Fast charging system with extended autonomy for the most demanding jobs."
+  },
+  "cta": {
+    "tag": "AVAILABLE NOW",
+    "title": "Your Next Pro Tool",
+    "button": "View Full Catalog"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "shop": "Shop",
+    "cart": "Cart"
+  }
+}

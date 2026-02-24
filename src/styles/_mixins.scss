@@ -1,0 +1,219 @@
+// ==========================================================================
+// MIXINS - Voltix Design System
+// ==========================================================================
+
+@use 'variables' as *;
+
+// --------------------------------------------------------------------------
+// Responsive (Mobile-First)
+// --------------------------------------------------------------------------
+
+/// Responsive breakpoint mixin (mobile-first approach)
+/// @param {String} $breakpoint - Breakpoint name (sm, md, lg, xl, 2xl)
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
+  } @else if $breakpoint == 2xl {
+    @media (min-width: $breakpoint-2xl) {
+      @content;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------
+// Flexbox Helpers
+// --------------------------------------------------------------------------
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// --------------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------------
+
+@mixin text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-widest;
+}
+
+@mixin text-tag {
+  display: inline-block;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-semibold;
+  letter-spacing: $letter-spacing-widest;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+@mixin text-title {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-snug;
+  letter-spacing: $letter-spacing-normal;
+  color: $color-text-primary;
+}
+
+// --------------------------------------------------------------------------
+// Buttons
+// --------------------------------------------------------------------------
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-weight: $font-weight-semibold;
+  transition: all $transition-fast;
+}
+
+@mixin button-primary {
+  @include button-base;
+  padding: $spacing-sm $spacing-xl;
+  background: $color-accent;
+  color: $color-bg-primary;
+  border-radius: $radius-md;
+
+  &:hover {
+    background: $color-accent-hover;
+    transform: translateY(-1px);
+  }
+}
+
+@mixin button-cta {
+  @include button-base;
+  gap: $spacing-sm;
+  padding: $spacing-md $spacing-2xl;
+  font-size: $font-size-lg;
+  color: $color-bg-primary;
+  background: linear-gradient(135deg, $color-accent 0%, $color-accent-hover 100%);
+  border-radius: $radius-lg;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px $color-accent-glow;
+  }
+}
+
+// --------------------------------------------------------------------------
+// Cards
+// --------------------------------------------------------------------------
+
+@mixin card-base {
+  background: $color-bg-tertiary;
+  border: 1px solid $color-border-light;
+  border-radius: $radius-lg;
+  transition: all $transition-normal;
+}
+
+@mixin card-hover {
+  background: $color-bg-tertiary;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+// --------------------------------------------------------------------------
+// Layout
+// --------------------------------------------------------------------------
+
+@mixin container {
+  max-width: $max-width-content;
+  margin: 0 auto;
+  padding: 0 $padding-container;
+}
+
+@mixin container-wide {
+  max-width: $max-width-wide;
+  margin: 0 auto;
+  padding: 0 $padding-container;
+}
+
+@mixin full-viewport {
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin sticky-top {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+@mixin fixed-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// --------------------------------------------------------------------------
+// Animations
+// --------------------------------------------------------------------------
+
+@mixin animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll-wheel {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: translateY(6px);
+  }
+}
+
+// --------------------------------------------------------------------------
+// Visual Effects
+// --------------------------------------------------------------------------
+
+@mixin backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+@mixin gradient-bg {
+  background: linear-gradient(180deg, $color-bg-primary 0%, $color-bg-tertiary 100%);
+}
