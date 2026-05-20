@@ -8,7 +8,7 @@
 import { computed } from 'vue'
 
 const props = defineProps<{
-  stock: 'high' | 'medium' | 'low'
+  stock: 'high' | 'medium' | 'low'| 'out'
 }>()
 
 const stockText = computed(() => {

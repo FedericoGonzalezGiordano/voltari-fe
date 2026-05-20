@@ -28,9 +28,18 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  quantity: number
-}>()
+const props = withDefaults(
+  defineProps<{
+    quantity: number
+    min?: number
+    max?: number
+    onChange?: (quantity: number) => void
+  }>(),
+  {
+    min: 1,
+    max: 99
+  }
+)
 
 defineEmits<{
   change: [quantity: number]

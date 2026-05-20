@@ -70,5 +70,10 @@
     "tag": "DISPONÍVEL AGORA",
     "title": "Sua Próxima Ferramenta Pro",
     "button": "Ver Catálogo Completo"
-  }
+  },
+  "breadcrumb": {
+  "home": "Início",
+  "shop": "Loja",
+  "cart": "Carrinho"
+}
 }

@@ -23,7 +23,7 @@ export interface CartItem {
   price: number
   originalPrice?: number
   quantity: number
-  stock: 'high' | 'medium' | 'low'
+  stock: 'high' | 'medium' | 'low' | 'out'
   images: string[]
   variants: CartItemVariants
   selectedVariants: CartItemSelectedVariants

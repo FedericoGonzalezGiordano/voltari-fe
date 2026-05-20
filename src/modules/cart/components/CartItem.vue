@@ -155,7 +155,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useCartStore } from '../stores/useCartStore'
-import { CartItem as CartItemType } from '../types'
+import type  { CartItem as CartItemType } from '../types'
 import QuantitySelector from './QuantitySelector.vue'
 import ColorSwatch from './ColorSwatch.vue'
 import StockBadge from './StockBadge.vue'

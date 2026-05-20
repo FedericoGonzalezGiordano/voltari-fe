@@ -64,7 +64,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { Product } from '../data/productsData'
+import type { Product } from '../data/productsData'
 import StockBadge from '@/modules/cart/components/StockBadge.vue'
 import { useCartStore } from '@/modules/cart'
 
