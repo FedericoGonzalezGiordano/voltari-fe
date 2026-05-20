@@ -93,7 +93,7 @@ onBeforeUnmount(() => {
 .scroll-animation {
   position: relative;
   width: 100%;
-  height: 350vh;
+  height: 300vh;
   background-color: $color-bg-primary;
 
   @include respond-to(md) {
@@ -110,10 +110,14 @@ onBeforeUnmount(() => {
   &__canvas-container {
     @include sticky-top;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     @include flex-center;
     z-index: 1;
     overflow: hidden;
+
+    @include respond-to(md) {
+      height: 100vh;
+    }
   }
 
   &__canvas {
@@ -155,10 +159,24 @@ onBeforeUnmount(() => {
 }
 
 .scroll-section {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: center;
   padding: 0 $spacing-md;
+
+  @include respond-to(md) {
+    height: 100vh;
+  }
+
+  &--hero {
+    align-items: flex-start;
+    padding-top: max(96px, 16svh);
+
+    @include respond-to(md) {
+      align-items: center;
+      padding-top: 0;
+    }
+  }
 
   @include respond-to(sm) {
     padding: 0 $padding-container;

@@ -51,7 +51,7 @@ export function useCanvasAnimation(
 
   const isMobile = (): boolean => window.innerWidth < 768
 
-  const getScaleFactor = (): number => isMobile() ? 1.4 : 0.99
+  const getScaleFactor = (): number => isMobile() ? 1.18 : 0.99
 
   const drawFrame = (frameIndex: number): void => {
     if (!ctx || !canvasRef.value || !images[frameIndex]) return
@@ -59,30 +59,32 @@ export function useCanvasAnimation(
     const canvas = canvasRef.value
     const img = images[frameIndex]
     const scaleFactor = getScaleFactor()
+    const viewportWidth = canvas.clientWidth || window.innerWidth
+    const viewportHeight = canvas.clientHeight || window.innerHeight
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, viewportWidth, viewportHeight)
 
     const imgRatio = img.width / img.height
-    const canvasRatio = canvas.width / canvas.height
+    const canvasRatio = viewportWidth / viewportHeight
 
     let drawWidth, drawHeight, offsetX, offsetY
 
     if (isMobile()) {
-      drawWidth = canvas.width * scaleFactor
+      drawWidth = viewportWidth * scaleFactor
       drawHeight = drawWidth / imgRatio
-      offsetX = (canvas.width - drawWidth) / 2
-      offsetY = (canvas.height - drawHeight) / 2
+      offsetX = (viewportWidth - drawWidth) / 2
+      offsetY = Math.max(viewportHeight * 0.32, (viewportHeight - drawHeight) / 2)
     } else {
       if (imgRatio > canvasRatio) {
-        drawHeight = canvas.height * scaleFactor
+        drawHeight = viewportHeight * scaleFactor
         drawWidth = drawHeight * imgRatio
       } else {
-        drawWidth = canvas.width * scaleFactor
+        drawWidth = viewportWidth * scaleFactor
         drawHeight = drawWidth / imgRatio
       }
 
-      offsetX = (canvas.width - drawWidth) / 2
-      offsetY = (canvas.height - drawHeight) / 2
+      offsetX = (viewportWidth - drawWidth) / 2
+      offsetY = (viewportHeight - drawHeight) / 2
     }
 
     ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight)

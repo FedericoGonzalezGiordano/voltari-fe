@@ -91,7 +91,12 @@ watch(isMenuOpen, (open) => {
   }
 
   &__flag {
+    display: none;
     font-size: $font-size-lg;
+
+    @include respond-to(md) {
+      display: inline;
+    }
   }
 
   &__arrow {
@@ -138,7 +143,12 @@ watch(isMenuOpen, (open) => {
   }
 
   &__option-flag {
+    display: none;
     font-size: $font-size-xl;
+
+    @include respond-to(md) {
+      display: inline;
+    }
   }
 
   &__option-name {
